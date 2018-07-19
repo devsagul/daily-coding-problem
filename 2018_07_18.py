@@ -30,6 +30,6 @@ if __name__ == '__main__':
 			  ]
 	for test, k, answer in zip(tests, ks, answers):
 		actual = sum2(test, k)
-		message = "Failed test {0}\n got {1}" \
+		message = "Failed test {0}\ngot {1}" \
 		          "expected {2}".format(test, actual, answer)
 		assert actual == answer, message
